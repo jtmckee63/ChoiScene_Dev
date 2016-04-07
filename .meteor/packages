@@ -16,7 +16,6 @@ react
 kevohagan:sweetalert
 fourseven:scss
 matb33:collection-hooks
-velocity:html-reporter
 sanjo:jasmine
 momentjs:moment
 iron:router
@@ -34,3 +33,4 @@ random
 ejson
 spacebars
 check
+mdg:camera

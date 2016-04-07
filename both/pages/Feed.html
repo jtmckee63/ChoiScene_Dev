@@ -1,42 +1,13 @@
 <template name='Feed'>
-  <div class="feed">
-    <div class="container">
-
-      <div class="col-25">
-        <!-- see lib/blaze_adapter for this render helper -->
-        {{> ReactComponent type="ParamsExample" }}
-      </div>
-
-      <div class="col-50">
-        {{> ReactComponent type="CreatePost" }}
-        {{> ReactComponent type="FeedContainer" }}
-      </div>
-
-      <div class="col-25">
-        {{> TrendingPosts}}
-      </div>
-
+    <div class="feed">
+        <div class="container">
+            <div class="col-50" style="margin:0 auto;">
+                <div class="picLink" style="text-align:center;">
+                    <a href="#" style="text-align:center;" class="takePhoto">take photo</a>
+                </div>
+                {{> ReactComponent type="CreatePost" }} {{> ReactComponent type="FeedContainer" }}
+            </div>
+        </div>
+        <img class="photo">
     </div>
-  </div>
 </template>
-
-<template name='TrendingPosts'>
-  <div class="trending-posts" style="
-    background-color: white;
-    margin-left: 10px;
-    border: 1px solid #E2E2E2;
-    padding: 10px;"
-    >
-    <h4 style='text-align:center;color: #2D2D2D'>Bar X</h4>
-
-    <br/>
-
-    <h5 align="center">Bar X Specials</h5>
-    <ul style="align-content: center">
-        <li style="color:#2D2D2D; align-content: center">Half Off Wells</li>
-        <li style="color:#2D2D2D; align-content: center">$2 Dollar Shots</li>
-        <li style="color:#2D2D2D; align-content: center">Free Motorboating</li>
-    </ul>
-  </div>
-</template>
-

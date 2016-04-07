@@ -10,3 +10,4 @@ Router.route('/', function () {
 function route(){
     Router.route('/Prompt2');
 }
+
