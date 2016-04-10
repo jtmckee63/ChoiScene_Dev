@@ -4,10 +4,17 @@
             <div class="container--panel article" align="center">
 
                 <figure>
-                    <img src="/ChoiScene_Final.png" alt="" width="175" height="200"/>
+                    <img src="/ChoiScene_6v2.png" alt="" width="175" height="200"/>
                 </figure>
 
                 <h1 id="react-ivemeteor" style="color: white;">ChoiScene</h1>
+
+                {{#if currentUser}}
+                    {{currentUser.services.facebook.picture}}
+                    {{>loginButtons}}
+                {{/if}}
+                <br>
+                <br>
 
                 <a href="/prompt1" align="center" style="color: white">Make Your Choice</a>
 
@@ -26,8 +33,8 @@
 
         </div> <!-- END template wrapper -->
 
-        <a href="#" class="takePhoto">take photo</a>
+        <!-- <a href="#" class="takePhoto">take photo</a>
 
-    <img class="photo">
+    <img class="photo"> -->
     </body>
 </template>
