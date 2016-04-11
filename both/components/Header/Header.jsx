@@ -18,10 +18,9 @@ this.Header = React.createClass({
             </a>
           </div>
           <div className="nav" align="center">
-            <a href="/feed">Feed Page</a>
-            &nbsp;
+            
             <a href="/choiScene">ChoiScene</a>
-            <div id="loginContainer" />
+            
           </div>
         </div>
         <br />
