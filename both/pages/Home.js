@@ -3,7 +3,7 @@
  */
 Router.route('/', function () {
     this.render('Home', {
-        data: function () { return Items.findOne({_id: this.params._id}); }
+        data: function () { return Body.findOne({_id: this.params._id}); }
     });
 });
 
@@ -11,3 +11,10 @@ function route(){
     Router.route('/Prompt2');
 }
 
+Avatar.setOptions({
+  fallbackType: "initials"
+});
+
+Avatar.setOptions({
+	defaultImageUrl: "packages/utilities_avatar/default.png"
+});
