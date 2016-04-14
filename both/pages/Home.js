@@ -16,5 +16,5 @@ Avatar.setOptions({
 });
 
 Avatar.setOptions({
-	defaultImageUrl: "packages/utilities_avatar/default.png"
+	defaultImageUrl: "http://example.com/default-avatar.png"
 });

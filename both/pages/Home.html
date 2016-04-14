@@ -16,10 +16,15 @@
                         shape="circle"
                         bgColor="#BFBFBF"
                         txtColor="color: white" }}
-                        <br>
-                        <br>
-                        <br>
+                {{else}}
+                    {{> avatar user=currentUser
+                        size="large"
+                        shape="circle"
+                        bgColor="#BFBFBF"
+                        txtColor="color: white" }}
+                        
                 {{/if}}
+                <br>
                 {{>loginButtons}}
                 <br>
                 <br>
