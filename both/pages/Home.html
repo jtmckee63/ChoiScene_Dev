@@ -10,18 +10,15 @@
                 <h1 id="react-ivemeteor" style="color: white;">ChoiScene</h1>
 
                 {{#if currentUser}}
-                    {{currentUser.services.facebook.picture}}
                     {{> avatar user=currentUser
                         size="large"
                         shape="circle"
                         bgColor="#BFBFBF"
                         txtColor="color: white" }}
                 {{else}}
-                    {{> avatar user=currentUser
-                        size="large"
-                        shape="circle"
-                        bgColor="#BFBFBF"
-                        txtColor="color: white" }}
+                    <div class="avatar avatar-large avatar-circle">
+                        <img class="avatar-image" src="/default-avatar.png" alt="avatar" onerror="this.style.display='none';" width="30" height="30">
+                    </div>
                         
                 {{/if}}
                 <br>
@@ -34,7 +31,7 @@
                 <br>
                 <br>
                 <div className="nav" align="center">
-                    <a href="/feed">Feed Page</a>
+                    <a href="/feed" style="color: white; font-size: 140%;">News Feed</a>
                 </div>
 
                 <div class="cloud x1" style="z-index:0;"></div>

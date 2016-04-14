@@ -23,7 +23,11 @@ this.Header = React.createClass({
             
           </div>
         </div>
-        <br />
+        // <div class="login-buttons" class="login-buttons-dropdown-align-">
+        //   <div class="login-link-and-dropdown-list login-form-sign-in">
+        //     <a class="login-link-text" id="login-sign-in-link"><img src="/default-avatar.png" alt="" width="80" height="80"/></a>
+        //   </div>
+        // </div>
       </div>
     );
   }
